@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('/pegawai',[EmployeeController::class, 'index'])->name('pegawai');
 
+Route::get('/tambahpegawai',[EmployeeController::class, 'tambahpegawai'])->name('tambahpegawai');
+Route::post('/insertdata',[EmployeeController::class, 'insertdata'])->name('insertdata');
+
